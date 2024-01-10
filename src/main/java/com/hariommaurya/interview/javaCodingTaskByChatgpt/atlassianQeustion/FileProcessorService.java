@@ -1,6 +1,7 @@
 package com.hariommaurya.interview.javaCodingTaskByChatgpt.atlassianQeustion;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 public class FileProcessorService {
@@ -13,6 +14,7 @@ public class FileProcessorService {
     public int calculateTotalSize() {
         return fileDataList.stream().mapToInt(FileData::getFileSize).sum();
     }
+
 
     public Map<String, Integer> calculateTopKCollections(int k) {
         return fileDataList.stream()
