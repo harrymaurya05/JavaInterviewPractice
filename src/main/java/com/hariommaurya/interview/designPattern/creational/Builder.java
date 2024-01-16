@@ -174,6 +174,7 @@ public class Builder {
     public static void main(String[] args) {
         Order order = new Order.Builder().code("mobile").price(423).id("233").build();
         System.out.println(order);
+        System.out.println(order);
 
         Eployee eployee = new Eployee.Builder().id(1).name("Hariom").salary(1000.0).build();
         System.out.println(eployee);
