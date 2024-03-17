@@ -8,7 +8,7 @@ public class DebugLogProcessor extends LogProcessor{
     @Override
     public void log(int logLevel, String msg) {
         if (logLevel == DEBUG){
-            System.out.println("Test Debug : "+msg);
+            System.out.println("Test1 Debug : "+msg);
         } else {
             super.log(logLevel, msg);
         }
